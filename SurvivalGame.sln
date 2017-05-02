@@ -1,11 +1,11 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{606D4689-FF17-4C85-9925-89471274F6D8}") = "SurvivalGame", "Assembly-CSharp-firstpass.csproj", "{623AF5CA-EB81-CB6D-4794-935468E8415F}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalGame", "Assembly-CSharp-firstpass.csproj", "{623AF5CA-EB81-CB6D-4794-935468E8415F}"
 EndProject
-Project("{606D4689-FF17-4C85-9925-89471274F6D8}") = "SurvivalGame", "Assembly-CSharp.csproj", "{8513B4BA-B40C-80D0-1087-E4FBF499D794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalGame", "Assembly-CSharp.csproj", "{8513B4BA-B40C-80D0-1087-E4FBF499D794}"
 EndProject
-Project("{606D4689-FF17-4C85-9925-89471274F6D8}") = "SurvivalGame", "Assembly-CSharp-Editor.csproj", "{62B9753A-C955-E98A-4ED3-7E01E0FB6915}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivalGame", "Assembly-CSharp-Editor.csproj", "{62B9753A-C955-E98A-4ED3-7E01E0FB6915}"
 EndProject
 Project("{606D4689-FF17-4C85-9925-89471274F6D8}") = "SurvivalGame", "Assembly-UnityScript.unityproj", "{483EB479-9041-8042-DAD3-DE94E34E7DC1}"
 EndProject

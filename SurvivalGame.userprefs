@@ -1,13 +1,13 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+﻿<Properties StartupItem="SurvivalGame.CSharp.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Tree.cs">
     <Files>
-      <File FileName="Assets\TreeChop.cs" Line="41" Column="49" />
+      <File FileName="Assets\TreeChop.cs" Line="1" Column="1" />
       <File FileName="Assets\Pickup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Tree.cs" Line="27" Column="59" />
+      <File FileName="Assets\Tree.cs" Line="37" Column="86" />
       <File FileName="Assets\Campfire.cs" Line="1" Column="1" />
       <File FileName="Assets\Food.cs" Line="1" Column="1" />
-      <File FileName="Assets\Player.cs" Line="17" Column="2" />
+      <File FileName="Assets\Player.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

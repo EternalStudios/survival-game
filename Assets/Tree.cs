@@ -7,7 +7,7 @@ public class Tree : MonoBehaviour {
 
 	public int health = 3;
 
-	public Transform logPrefab;
+	public GameObject logPrefab;
 
 	public AudioClip falling;
 	public AudioClip breaking;
