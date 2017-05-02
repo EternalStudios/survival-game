@@ -26,8 +26,8 @@ public class Pickup : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (pickedUp) {
-			transform.parent = GameObject.FindWithTag ("Player").transform.FindChild ("MainCamera").transform;
-			transform.parent = GameObject.FindWithTag ("Player").transform;
+			transform.SetParent (GameObject.FindWithTag ("Player").transform.FindChild ("MainCamera").transform);
+			transform.SetParent (GameObject.FindWithTag ("Player").transform);
 			transform.position = hand.position;
 			gameObject.GetComponent<Rigidbody> ().useGravity = false;
 			gameObject.GetComponent<Rigidbody> ().isKinematic = true;
@@ -54,8 +54,8 @@ public class Pickup : MonoBehaviour {
 			} else if (objectsCloseTo == 0) {
 				pickupText.GetComponent<Text> ().text = "";
 			}
-			if (Input.GetKeyDown ("e") && GameObject.FindWithTag ("MainCamera").transform.childCount == 0) {
-				pickedUp = !pickedUp;
+			if (Input.GetKeyDown ("e") && GameObject.FindWithTag ("MainCamera").GetComponentInChildren<Pickup>() == null) {
+				pickedUp =! pickedUp;
 			}
 		} else if (closeTo) {
 			closeTo = false;

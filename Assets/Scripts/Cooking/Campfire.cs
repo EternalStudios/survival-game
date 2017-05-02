@@ -35,14 +35,14 @@ public class Campfire : MonoBehaviour {
 			if (Pickup.objectsCloseTo == 0 && !isBurning && fuel > 0) {
 				interactText.GetComponent<Text> ().text = "Press [E] to heat up the fire (" + ((int)heat) + "%)";
 			} else if (isBurning || Pickup.objectsCloseTo > 0 && isBurning) {
-				interactText.GetComponent<Text> ().text = "";
+				interactText.GetComponent<Text> ().text = null;
 			} else if (fuel == 0 && Pickup.objectsCloseTo == 0) {
 				interactText.GetComponent<Text> ().text = "Campfire needs fuel (wood) to burn.";
 			} else if (Pickup.objectsCloseTo > 0) {
-				interactText.GetComponent<Text> ().text = "";
+				interactText.GetComponent<Text> ().text = null;
 			}
 		} else if (Vector3.Distance (transform.position, GameObject.FindWithTag ("Player").transform.position) > 3) {
-			interactText.GetComponent<Text> ().text = "";
+			interactText.GetComponent<Text> ().text = null;
 		}
 
 		if (heat >= 100) {
@@ -86,6 +86,9 @@ public class Campfire : MonoBehaviour {
 				Pickup.objectsCloseTo -= 1;
 			}
 
+		}else if (other.tag == "Twig" && fuel < 50 & !other.GetComponent <Pickup> ().pickedUp) {
+			fuel += 5.0f;
+			Destroy (other.gameObject);
 		}
 
 		if (isBurning) {
