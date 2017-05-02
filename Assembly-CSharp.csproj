@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8513B4BA-B40C-80D0-1087-E4FBF499D794}</ProjectGuid>
+    <ProjectGuid>{5123A72E-36B7-4D14-C37D-EAC991FE77C9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,13 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Campfire.cs" />
      <Compile Include="Assets\Campfire\Script\FireLightScript.cs" />
-     <Compile Include="Assets\Food.cs" />
      <Compile Include="Assets\ForestVision\09 Scripts\FV_BranchRotation.cs" />
      <Compile Include="Assets\ForestVision\09 Scripts\FV_Wind.cs" />
-     <Compile Include="Assets\Pickup.cs" />
-     <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Antialiasing.cs" />
      <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\Bloom.cs" />
      <Compile Include="Assets\Realistic Terrain Collection\Other\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
@@ -92,9 +88,15 @@
      <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
      <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
      <Compile Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
-     <Compile Include="Assets\Tree.cs" />
-     <Compile Include="Assets\TreeChop.cs" />
-     <Compile Include="Assets\Weather.cs" />
+     <Compile Include="Assets\Scripts\Cooking\Campfire.cs" />
+     <Compile Include="Assets\Scripts\Cooking\Food.cs" />
+     <Compile Include="Assets\Scripts\Gathering and Crafting\Crafting.cs" />
+     <Compile Include="Assets\Scripts\Gathering and Crafting\Pickup.cs" />
+     <Compile Include="Assets\Scripts\Gathering and Crafting\PlaceItem.cs" />
+     <Compile Include="Assets\Scripts\Gathering and Crafting\Tree.cs" />
+     <Compile Include="Assets\Scripts\Gathering and Crafting\TreeChop.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Weather.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Rocks Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Tool Starter Kit\ReadME.txt" />
@@ -214,7 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{623AF5CA-EB81-CB6D-4794-935468E8415F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{8C54D0CC-8AA1-3F81-1BB9-99C3B9255828}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
