@@ -1,10 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Gathering and Crafting\PlaceItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Cooking\Campfire.cs">
     <Files>
-      <File FileName="Assets\Scripts\Gathering and Crafting\Crafting.cs" Line="23" Column="113" />
-      <File FileName="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" Line="71" Column="1" />
-      <File FileName="Assets\Scripts\Gathering and Crafting\PlaceItem.cs" Line="21" Column="65" />
+      <File FileName="Assets\Scripts\Gathering and Crafting\Crafting.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gathering and Crafting\PlaceItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Campfire\Script\FireLightScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Cooking\Campfire.cs" Line="79" Column="9" />
+      <File FileName="Assets\Scripts\Gathering and Crafting\Pickup.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Gathering and Crafting\Tree.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Weather.cs" Line="39" Column="67" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

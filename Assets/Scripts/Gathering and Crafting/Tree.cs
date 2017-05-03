@@ -8,6 +8,7 @@ public class Tree : MonoBehaviour {
 	public int health = 3;
 
 	public GameObject logPrefab;
+	public GameObject twigPrefab;
 
 	public AudioClip falling;
 	public AudioClip breaking;
@@ -35,6 +36,9 @@ public class Tree : MonoBehaviour {
 			GameObject log = Instantiate (logPrefab, transform.position, transform.rotation) as GameObject;
 			GameObject log2 = Instantiate (logPrefab, transform.position, transform.rotation) as GameObject;
 			GameObject log3 = Instantiate (logPrefab, transform.position, transform.rotation) as GameObject;
+
+			GameObject twig = Instantiate (twigPrefab, transform.position, transform.rotation) as GameObject;
+			GameObject twig2 = Instantiate (twigPrefab, transform.position, transform.rotation) as GameObject;
 			gameObject.GetComponent<AudioSource> ().PlayOneShot (breaking);
 			Destroy (gameObject);
 		}

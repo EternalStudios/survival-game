@@ -11,6 +11,11 @@ public class Weather : MonoBehaviour {
 	public float rainChance;
 	public float rainTimer = 180;
 
+	public GameObject rain;
+	public GameObject light;
+
+	public Material[] skyboxes;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -24,9 +29,18 @@ public class Weather : MonoBehaviour {
 		if (isRaining) {
 			humidity = 1.75f;
 			rainTimer -= Time.deltaTime;
+			rain.SetActive (true);
+			light.GetComponent<Light> ().color = new Color32 (0, 0, 0, 255);
+			RenderSettings.skybox = skyboxes[1];
 		} else {
+			RenderSettings.skybox = skyboxes[0];
+			rain.SetActive (false);
+			humidity = 1.0f;
+			light.GetComponent<Light> ().color = new Color32 (255, 255, 255, 255);
 			//FIXME: Humidity is 1 or 2 depending on the weather;
 		}
+
+
 
 		if (rainTimer < 0) {
 			rainTimer = 0;
@@ -37,7 +51,7 @@ public class Weather : MonoBehaviour {
 
 		rainChance = Random.Range (0f, 100f);
 
-		if (rainChance > 99.8f) {
+		if (rainChance > 99.98f) {
 			isRaining = true;
 		}
 	}

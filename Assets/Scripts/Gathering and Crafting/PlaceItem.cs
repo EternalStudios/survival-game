@@ -70,7 +70,7 @@ public class PlaceItem : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "Terrain" && !isPlaced) {
+		if (other.tag == "Terrain" && !isPlaced && GameObject.Find("MainCamera").transform.rotation.x > 0 && GameObject.Find("MainCamera").transform.rotation.x > -4) {
 			gameObject.GetComponent<Renderer> ().material = materials [1];
 			canPlace = true;
 		} else if (!isPlaced) {
@@ -84,6 +84,17 @@ public class PlaceItem : MonoBehaviour {
 			stonesInPlace += 1;
 		} else if (other.tag == "Twig") {
 			twigsInplace += 1;
+		}
+	}
+
+	void OnTriggerStay(Collider other)
+	{
+		if (other.tag == "Terrain" && !isPlaced && GameObject.Find("MainCamera").transform.rotation.x < 0f) {
+			gameObject.GetComponent<Renderer> ().material = materials [1];
+			canPlace = true;
+		} else if (!isPlaced) {
+			gameObject.GetComponent<Renderer> ().material = materials [0];
+			canPlace = false;
 		}
 	}
 
